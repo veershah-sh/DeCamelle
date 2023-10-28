@@ -1,0 +1,177 @@
+:root{
+    /* colors */
+    --clr-text: #3A3A3A;
+    --clr-icon: #5C5C5C;
+    --clr-bg: #D9D9D9;
+    --clr-btn: #1B1B1B;
+
+    /* fonts */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+
+    /* font-size */
+    --fs-small: 18px;
+    --fs-medium: 52px;
+    --fs-large: 90px;
+
+    /* padding */
+    --pp: 96px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* resets */
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+li,ul,ol{
+    list-style-type: none;
+}
+
+/* utils */
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+/* main css */
+
+body{
+    color: var(--clr-text);
+    font-family: var(--font-primary);
+}
+
+.container{
+    padding: 16px var(--pp);
+}
+
+.btn{
+    background-color: var(--clr-btn);
+    width: 220px;
+    height: 60px;
+}
+
+.header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-logo a{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.h-social{
+    gap: 16px;
+}
+
+.h-div{
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    right: 0px;
+    color: var(--clr-bg);
+}
+
+.navbar{
+    margin-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero{
+    height: 620px;
+    width: 100%;
+    background-image: url(../img/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+}
+
+.container{
+    row-gap: 28px;
+}
+
+.hero-title{
+    font-size: var(--fs-large);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+}
+
+.btn-shop{
+    place-items: center;
+}
+
+.btn-shop a{
+    color: #f9f9f9;
+    font-weight: 500;
+}
+
+.main{
+    padding: var(--pp) 0px;
+    align-items: center;
+    column-gap: var(--pp);
+}
+
+.main-img img{
+    height: 500px;
+    width: 700px;
+}
+
+.main-content{
+    row-gap: 28px;
+}
+
+.mc-title{
+    font-size: var(--fs-medium);
+    font-weight: 500;
+    font-family: var(--font-secondary);
+}
+
+.btn-shop-now{
+    place-items: center;
+}
+
+.btn-shop-now a{
+    color: #f9f9f9;
+    font-weight: 500;
+}
+
+.bs-title{
+    font-size: var(--fs-medium);
+    font-weight: 500;
+    font-family: var(--font-secondary);
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.bs-cards{
+    align-items: center;
+    gap: 48px;
+}
+
+.bs-card{
+    padding: 16px;
+    /* background-color: #D9D9D9; */
+    text-align: center;
+    font-size: 14px;
+    row-gap: 12px;
+}
+
+.card-img img{
+    width: 320px;
+}
+
+.card-title{
+    font-weight: 600;
+}
